@@ -1,0 +1,29 @@
+ul {
+ margin:0;
+ padding:0;
+ list-style-type:none;
+ }
+li {
+ float:left;
+ width:180px;
+ position: relative;
+}
+a{border: 1px dashed black;
+}
+.menu{border: 1px solid black;
+}
+a, .menu {
+ display: block;
+ background: yellow;
+ padding: 8px;
+ text-decoration: none;
+}
+li .second {
+ display: none;
+ position: absolute;
+ top: 100%;
+ left:0;
+}
+li:hover .second{
+ display: block;
+}

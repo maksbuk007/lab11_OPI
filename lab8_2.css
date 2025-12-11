@@ -1,0 +1,146 @@
+img{width: 200px;
+    height: 200px;
+     margin: 10px 40px 10px 40px;
+}    
+.zad1_1:hover{transform: scale(0.5);
+}
+.zad1_2{transform: rotate(45deg);
+}
+.zad1_3{transform: translate(50px);
+}
+.zad1_4:hover{transform: skew(-20deg);
+}
+
+.zad2{ perspective:400px;
+    display: inline-block;
+    text-align: center;
+}
+
+.zad2_1, .zad2_3{transform:rotateX(20deg);
+    transform-style: preserve-3d;
+}
+.zad2_2{transform:rotateY(20deg) ;
+    transform-style: preserve-3d;
+}
+.zad2_4{transform: rotateY(-20deg);
+    transform-style: preserve-3d;
+}
+
+.borderus3{width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    color: rgb(255, 255, 255);
+    transition: all 20s linear;
+}
+.zad3_2:hover{color: rgb(0, 0, 0);    
+}
+
+@keyframes imag {
+    0% {background-image: url("Для интернета - Свадебная история (437).jpg");}
+    25%{background-image: url("Для интернета - Свадебная история (454).jpg");}
+    50%{background-image: url("Для интернета - Свадебная история (485).jpg");}
+    75%{background-image: url("Для интернета - Свадебная история (527).jpg");}
+    100%{background-image: url("Для интернета - Свадебная история (755).jpg");}
+}
+
+.zad4{width: 200px;
+    height: 200px;
+    background-size: contain;
+    border: 3px solid black;
+    background-repeat: no-repeat;
+    animation: imag 5s infinite ease-in;
+}
+
+@keyframes zadan {
+    from{opacity: 0;}
+    to{opacity: 80%;}
+}
+h1{  animation: zadan infinite 2s  alternate;
+}
+
+@keyframes zad5_1anim{
+    from{transform:translateX(0);}
+    to{transform: translateX(200px);}
+}
+.zad5_1{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("Для интернета - Свадебная история (117).jpg");
+    animation: zad5_1anim 3s alternate linear infinite;
+}
+
+@keyframes zad5_2anim{
+    from{transform:translateY(0);}
+    to{transform: translateY(200px);}
+}
+.zad5_2{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("Для интернета - Свадебная история (117).jpg");
+    animation: zad5_2anim 3s alternate linear infinite;
+}
+
+@keyframes zad5_3anim{
+    from{transform:translateY(0);}
+    to{transform: translateY(200px) translateX(200px);}
+}
+.zad5_3{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("Для интернета - Свадебная история (117).jpg");
+    animation: zad5_3anim 3s alternate linear infinite;
+}
+
+.scene {
+  position: relative;
+}
+
+@keyframes zad5_4anim {
+  0%   { left: 0;      top: 0; }
+  25%  { left: 400px;  top: 0; }
+  50%  { left: 400px;  top: 400px; }
+  75%  { left: 0;      top: 400px; }
+  100% { left: 0;      top: 0; }
+}
+
+.zad5_4 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-image: url("Для интернета - Свадебная история (117).jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: zad5_4anim 4s linear infinite;
+}
+
+ul{list-style-type: none;
+    background-color: yellow;
+    border: 2px solid black;
+    display: inline;
+    padding: 0;
+}
+
+a{text-decoration: none;
+    color: green;   
+}
+a{display: inline-block; 
+}
+
+li{
+    border-left: 2px solid black;
+    display: inline;
+    margin: 0;
+}
+
+li:first-child {
+    border-left: none;
+}

@@ -1,0 +1,30 @@
+ul{list-style-type: none;
+    border: 2px solid black;
+    display: inline;
+    padding: 10px;
+    }
+
+a{text-decoration: none;
+    color: green;
+    display: inline-block;
+    background: url(facultet.png) no-repeat left 0;
+    padding-left: 25px; 
+}
+
+li{
+    border-left: 2px solid black;
+    display: inline;
+    margin: 0;
+    padding: 10px;
+}
+
+li:first-child {
+    border-left: none;
+}
+
+.z2 a:hover{background: url(facultet.png) no-repeat left -35px;
+}
+.z3 a:hover{background: url(facultet.png) no-repeat left -60px;
+}
+.z4 a:hover{background: url(facultet.png) no-repeat left -90px;
+}
